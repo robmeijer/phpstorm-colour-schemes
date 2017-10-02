@@ -8,6 +8,8 @@
             background: #1d262f;
             color: #d6e9ff;
             font-family: sans-serif;
+            font-size: 17px;
+            line-height: 180%;
         }
 
         .default {
@@ -40,23 +42,25 @@
     </style>
 </head>
 <body>
-<span class="php-code-tag">&lt;?php</span><br>
-<br>
-<span class="keyword">namespace</span> <span class="identifier">App<span class="default">\</span>Controller</span><span class="punctuation">;</span><br>
-<br>
-<span class="keyword">use</span> <span class="identifier">App<span class="default">\</span>Entity<span class="default">\</span>Page</span><span class="punctuation">;</span><br>
-<span class="keyword">use</span> <span class="identifier">Symfony<span class="default">\</span>Bundle<span class="default">\</span>FrameworkBundle<span class="default">\</span>Controller<span class="default">\</span>AbstractController</span><span class="punctuation">;</span><br>
-<br>
-<span class="keyword">class</span> PageController <span class="keyword">extends</span> <span class="identifier">AbstractController</span><br>
-<span class="punctuation">{</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">/**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;* <span class="tag">@param</span> Page $page<br>
-&nbsp;&nbsp;&nbsp;&nbsp;* <span class="tag">@return</span> \Symfony\Component\HttpFoundation\Response<br>
-&nbsp;&nbsp;&nbsp;&nbsp;*/</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public function</span> showAction<span class="punctuation">(</span><span class="identifier">Page</span> <span class="variable">$page</span><span class="punctuation">)</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="punctuation">{</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">$this</span><span class="operator">-></span>render<span class="punctuation">(</span><span class="string">'page/show.html.twig'</span><span class="punctuation">,</span> <span class="identifier">compact</span><span class="punctuation">(</span><span class="string">'page'</span><span class="punctuation">));</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="punctuation">}</span><br>
-<span class="punctuation">}</span><br>
+<pre>
+<span class="php-code-tag">&lt;?php</span>
+
+<span class="keyword">namespace</span> <span class="identifier">App<span class="default">\</span>Controller</span><span class="punctuation">;</span>
+
+<span class="keyword">use</span> <span class="identifier">App<span class="default">\</span>Entity<span class="default">\</span>Page</span><span class="punctuation">;</span>
+<span class="keyword">use</span> <span class="identifier">Symfony<span class="default">\</span>Bundle<span class="default">\</span>FrameworkBundle<span class="default">\</span>Controller<span class="default">\</span>AbstractController</span><span class="punctuation">;</span>
+
+<span class="keyword">class</span> PageController <span class="keyword">extends</span> <span class="identifier">AbstractController</span>
+<span class="punctuation">{</span>
+    <span class="comment">/**
+    * <span class="tag">@param</span> Page $page
+    * <span class="tag">@return</span> \Symfony\Component\HttpFoundation\Response
+    */</span>
+    <span class="keyword">public function</span> showAction<span class="punctuation">(</span><span class="identifier">Page</span> <span class="variable">$page</span><span class="punctuation">)</span>
+    <span class="punctuation">{</span>
+        <span class="keyword">return</span> <span class="variable">$this</span><span class="operator">-></span>render<span class="punctuation">(</span><span class="string">'page/show.html.twig'</span><span class="punctuation">,</span> <span class="identifier">compact</span><span class="punctuation">(</span><span class="string">'page'</span><span class="punctuation">));</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+</pre>
 </body>
 </html>
