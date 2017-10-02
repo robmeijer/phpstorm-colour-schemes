@@ -19,4 +19,4 @@ This scheme is inspired by [simurai's DuoTone themes](http://simurai.com/project
 It covers most file types, but I've paid particular attention to the types I use regularly, i.e. Php, Html, Css, Js, Yaml, and Json. 
 
 ## Preview
-You can preview the colour schemes on the [Demo page](https://robmeijer.github.io/phpstorm-colour-schemes).
+You can preview the colour schemes on the [Preview page](https://robmeijer.github.io/phpstorm-colour-schemes).
