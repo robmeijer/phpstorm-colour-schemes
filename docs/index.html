@@ -5,63 +5,184 @@
     <title>DuoTone Dark Sea</title>
     <style>
         body {
-            background: #1d262f;
-            color: #d6e9ff;
+            background: #000000;
             font-size: 17px;
             line-height: 180%;
+            font-family: sans-serif;
+        }
+
+        .sea-container {
+            background: #1d262f;
             margin: 0 auto;
             width: 960px;
         }
 
-        .default {
+        .sea-container, .sea-default {
             color: #d6e9ff;
         }
 
-        .php-code-tag, .keyword {
+        .sea-php-code-tag, .sea-keyword {
             color: #32ae85;
         }
 
-        .identifier, .operator {
+        .sea-identifier, .sea-operator {
             color: #88b4e7;
         }
 
-        .punctuation, .tag {
+        .sea-punctuation, .sea-tag {
             color: #586f89;
         }
 
-        .variable {
+        .sea-variable {
             color: #5d8cc0;
         }
 
-        .string {
+        .sea-string {
             color: #34febb;
         }
 
-        .comment {
+        .sea-comment {
             color: #444c55;
+        }
+
+        .sky-container {
+            background: #2c2734;
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        .sky-container, .sky-default {
+            color: #f1ebff;
+        }
+
+        .sky-php-code-tag, .sky-keyword {
+            color: #b07745;
+        }
+
+        .sky-identifier, .sky-operator {
+            color: #cab2fa;
+        }
+
+        .sky-punctuation, .sky-tag {
+            color: #715f95;
+        }
+
+        .sky-variable {
+            color: #ae91e8;
+        }
+
+        .sky-string {
+            color: #fec38f;
+        }
+
+        .sky-comment {
+            color: #544d60;
+        }
+
+        .space-container {
+            background: #24242e;
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        .space-container, .space-default {
+            color: #bebeef;
+        }
+
+        .space-php-code-tag, .space-keyword {
+            color: #b06845;
+        }
+
+        .space-identifier, .space-operator {
+            color: #8686cb;
+        }
+
+        .space-punctuation, .space-tag {
+            color: #5b5b7b;
+        }
+
+        .space-variable {
+            color: #7272a1;
+        }
+
+        .space-string {
+            color: #fe7734;
+        }
+
+        .space-comment {
+            color: #49495a;
         }
     </style>
 </head>
 <body>
-<pre>
-<span class="php-code-tag">&lt;?php</span>
+<div class="sea-container">
+    <h2>DuoTone Dark Sea</h2>
+    <pre>
+    <span class="sea-php-code-tag">&lt;?php</span>
 
-<span class="keyword">namespace</span> <span class="identifier">App<span class="default">\</span>Controller</span><span class="punctuation">;</span>
+    <span class="sea-keyword">namespace</span> <span class="sea-identifier">App<span class="sea-default">\</span>Controller</span><span class="sea-punctuation">;</span>
 
-<span class="keyword">use</span> <span class="identifier">App<span class="default">\</span>Entity<span class="default">\</span>Page</span><span class="punctuation">;</span>
-<span class="keyword">use</span> <span class="identifier">Symfony<span class="default">\</span>Bundle<span class="default">\</span>FrameworkBundle<span class="default">\</span>Controller<span class="default">\</span>AbstractController</span><span class="punctuation">;</span>
+    <span class="sea-keyword">use</span> <span class="sea-identifier">App<span class="sea-default">\</span>Entity<span class="sea-default">\</span>Page</span><span class="sea-punctuation">;</span>
+    <span class="sea-keyword">use</span> <span class="sea-identifier">Symfony<span class="sea-default">\</span>Bundle<span class="sea-default">\</span>FrameworkBundle<span class="sea-default">\</span>Controller<span class="sea-default">\</span>AbstractController</span><span class="sea-punctuation">;</span>
 
-<span class="keyword">class</span> PageController <span class="keyword">extends</span> <span class="identifier">AbstractController</span>
-<span class="punctuation">{</span>
-    <span class="comment">/**
-    * <span class="tag">@param</span> Page $page
-    * <span class="tag">@return</span> \Symfony\Component\HttpFoundation\Response
-    */</span>
-    <span class="keyword">public function</span> showAction<span class="punctuation">(</span><span class="identifier">Page</span> <span class="variable">$page</span><span class="punctuation">)</span>
-    <span class="punctuation">{</span>
-        <span class="keyword">return</span> <span class="variable">$this</span><span class="operator">-></span>render<span class="punctuation">(</span><span class="string">'page/show.html.twig'</span><span class="punctuation">,</span> <span class="identifier">compact</span><span class="punctuation">(</span><span class="string">'page'</span><span class="punctuation">));</span>
-    <span class="punctuation">}</span>
-<span class="punctuation">}</span>
-</pre>
+    <span class="sea-keyword">class</span> PageController <span class="sea-keyword">extends</span> <span class="sea-identifier">AbstractController</span>
+    <span class="sea-punctuation">{</span>
+        <span class="sea-comment">/**
+        * <span class="sea-tag">@param</span> Page $page
+        * <span class="sea-tag">@return</span> \Symfony\Component\HttpFoundation\Response
+        */</span>
+        <span class="sea-keyword">public function</span> showAction<span class="sea-punctuation">(</span><span class="sea-identifier">Page</span> <span class="sea-variable">$page</span><span class="sea-punctuation">)</span>
+        <span class="sea-punctuation">{</span>
+            <span class="sea-keyword">return</span> <span class="sea-variable">$this</span><span class="sea-operator">-></span>render<span class="sea-punctuation">(</span><span class="sea-string">'page/show.html.twig'</span><span class="sea-punctuation">,</span> <span class="sea-identifier">compact</span><span class="sea-punctuation">(</span><span class="sea-string">'page'</span><span class="sea-punctuation">));</span>
+        <span class="sea-punctuation">}</span>
+    <span class="sea-punctuation">}</span>
+    </pre>
+</div>
+<div class="sky-container">
+    <h2>DuoTone Dark Sky</h2>
+    <pre>
+    <span class="sky-php-code-tag">&lt;?php</span>
+
+    <span class="sky-keyword">namespace</span> <span class="sky-identifier">App<span class="sky-default">\</span>Controller</span><span class="sky-punctuation">;</span>
+
+    <span class="sky-keyword">use</span> <span class="sky-identifier">App<span class="sky-default">\</span>Entity<span class="sky-default">\</span>Page</span><span class="sky-punctuation">;</span>
+    <span class="sky-keyword">use</span> <span class="sky-identifier">Symfony<span class="sky-default">\</span>Bundle<span class="sky-default">\</span>FrameworkBundle<span class="sky-default">\</span>Controller<span class="sky-default">\</span>AbstractController</span><span class="sky-punctuation">;</span>
+
+    <span class="sky-keyword">class</span> PageController <span class="sky-keyword">extends</span> <span class="sky-identifier">AbstractController</span>
+    <span class="sky-punctuation">{</span>
+        <span class="sky-comment">/**
+        * <span class="sky-tag">@param</span> Page $page
+        * <span class="sky-tag">@return</span> \Symfony\Component\HttpFoundation\Response
+        */</span>
+        <span class="sky-keyword">public function</span> showAction<span class="sky-punctuation">(</span><span class="sky-identifier">Page</span> <span class="sky-variable">$page</span><span class="sky-punctuation">)</span>
+        <span class="sky-punctuation">{</span>
+            <span class="sky-keyword">return</span> <span class="sky-variable">$this</span><span class="sky-operator">-></span>render<span class="sky-punctuation">(</span><span class="sky-string">'page/show.html.twig'</span><span class="sky-punctuation">,</span> <span class="sky-identifier">compact</span><span class="sky-punctuation">(</span><span class="sky-string">'page'</span><span class="sky-punctuation">));</span>
+        <span class="sky-punctuation">}</span>
+    <span class="sky-punctuation">}</span>
+    </pre>
+</div>
+<div class="space-container">
+    <h2>DuoTone Dark Space</h2>
+    <pre>
+    <span class="space-php-code-tag">&lt;?php</span>
+
+    <span class="space-keyword">namespace</span> <span class="space-identifier">App<span class="space-default">\</span>Controller</span><span class="space-punctuation">;</span>
+
+    <span class="space-keyword">use</span> <span class="space-identifier">App<span class="space-default">\</span>Entity<span class="space-default">\</span>Page</span><span class="space-punctuation">;</span>
+    <span class="space-keyword">use</span> <span class="space-identifier">Symfony<span class="space-default">\</span>Bundle<span class="space-default">\</span>FrameworkBundle<span class="space-default">\</span>Controller<span class="space-default">\</span>AbstractController</span><span class="space-punctuation">;</span>
+
+    <span class="space-keyword">class</span> PageController <span class="space-keyword">extends</span> <span class="space-identifier">AbstractController</span>
+    <span class="space-punctuation">{</span>
+        <span class="space-comment">/**
+        * <span class="space-tag">@param</span> Page $page
+        * <span class="space-tag">@return</span> \Symfony\Component\HttpFoundation\Response
+        */</span>
+        <span class="space-keyword">public function</span> showAction<span class="space-punctuation">(</span><span class="space-identifier">Page</span> <span class="space-variable">$page</span><span class="space-punctuation">)</span>
+        <span class="space-punctuation">{</span>
+            <span class="space-keyword">return</span> <span class="space-variable">$this</span><span class="space-operator">-></span>render<span class="space-punctuation">(</span><span class="space-string">'page/show.html.twig'</span><span class="space-punctuation">,</span> <span class="space-identifier">compact</span><span class="space-punctuation">(</span><span class="space-string">'page'</span><span class="space-punctuation">));</span>
+        <span class="space-punctuation">}</span>
+    <span class="space-punctuation">}</span>
+    </pre>
+</div>
 </body>
 </html>
